@@ -12,7 +12,7 @@ Random rnd = new Random();
   
 int N = rnd.Next(10, 10000); 
 
-Console.WriteLine($"1 {N}");
+Console.WriteLine($"число N = {N}");
 
 int n1 = N; 
 
@@ -28,14 +28,15 @@ do{
     multiply = multiply * (n1 % 10);
     n1 = n1 / 10;
     
-    sum = sum + n2 % 10;
+    sum = sum + n2 % 10; //1. деление с остатком для определения последней цифры номера
     n2 = n2 / 10;
  }
+ 
  while(n1 > 0 && n2 > 0);
- {}
- Console.WriteLine($"2 {multiply} и {sum}");
+ 
+ Console.WriteLine($"произведение чисел = {multiply} и сумма чисел = {sum}");
 
- Console.WriteLine((float)multiply / sum);
+ Console.WriteLine($"произведенние деленное на сумму = {(float)multiply / sum}");
  
  Console.Write("[");
 
@@ -50,21 +51,3 @@ for (int i = 0; i <= 9; i++)
     }
 
 Console.WriteLine("]");
-
- 
- 
- 
- 
- 
- 
- 
- 
-   
- 
-// do{
-//     sum = sum + n2 % 10;
-//     n2 = n2 / 10;
-// }
-//  while(n2 > 0);
-//  {}
-//  Console.WriteLine($"3 {sum}");
