@@ -32,37 +32,7 @@ int summ(int N2)
    }
   
 
-<<<<<<< HEAD
 Console.Write("[");   
-=======
-Console.WriteLine($"число N = {N}");
-
-int n1 = N; 
-
-int n2 = N;
-
-int multiply = 1;
-
-int sum = 0;
-
-int [] array = new int[10];
-
-do{
-    multiply = multiply * (n1 % 10);
-    n1 = n1 / 10;
-    
-    sum = sum + n2 % 10; //1. деление с остатком для определения последней цифры номера
-    n2 = n2 / 10;
- }
- 
- while(n1 > 0 && n2 > 0);
- 
- Console.WriteLine($"произведение чисел = {multiply} и сумма чисел = {sum}");
-
- Console.WriteLine($"произведенние деленное на сумму = {(float)multiply / sum}");
- 
- Console.Write("[");
->>>>>>> 37094360ed093b03a3bcfabd82a52a3f0da26eec
 
 for (int i = 0; i <= 9; i++)
 {
@@ -89,9 +59,5 @@ for (int i = 0; i <= 9; i++)
         i--;
        }                    
     }
-<<<<<<< HEAD
 Console.WriteLine("]");
-=======
 
-Console.WriteLine("]");
->>>>>>> 37094360ed093b03a3bcfabd82a52a3f0da26eec
