@@ -4,7 +4,7 @@
 // [591, 532, 189, 523, 333, 546, 527, 275, 456, 264]
 
 
- int multiply(int N1)
+ int product_digits_number(int N1)
    {  int n1 = N1;
       int multiply = 1;
              
@@ -17,7 +17,7 @@
         return(multiply);
    }
         
-int summ(int N2)
+int  sum_digits_number(int N2)
 
    {  int n2 = N2;
       int sum = 0;
@@ -43,8 +43,8 @@ for (int i = 0; i <= 9; i++)
    int [] array = new int[10];   
    int mult = N;
    int sum = N;
-   mult = multiply(mult);
-   sum = summ(sum);
+   mult = product_digits_number(mult);
+   sum = sum_digits_number(sum);
    int result = mult % sum;
    //Console.WriteLine($"Произведение цифр деленое с остатком на сумму цифр = {result}");
    
