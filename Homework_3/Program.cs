@@ -44,9 +44,10 @@ int  sum_digits_number(int N2)
    }
   
 
-Console.Write("[");   
+Console.Write("["); 
+int count = 0;  
 
-for (int i = 0; i <= 9; i++)
+while (count != 10)
    {
    Random rnd = new Random(); 
    
@@ -71,16 +72,12 @@ for (int i = 0; i <= 9; i++)
    
       if (mult % sum == 0)
       {
-      array[i] = N;  
-      Console.Write($"{array[i] }, ");
+      array[count] = N;  
+      Console.Write($"{array[count] }, ");
+      count++;
       }
 
-      else
-      {
-      i--;
-      }
-
-   }
+}
    
 Console.WriteLine("]");
 
